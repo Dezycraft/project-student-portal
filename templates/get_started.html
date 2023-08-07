@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Student-portal App - get_started</title>
+{% endblock %}
+
+{% block get_active %}
+class="active"
+{% endblock %}
+        
+{% block content %}
+<div class="portal-section">
+    <div class="students-portal">
+        <h1>Student Portal Form</h1>
+        <p>Please fill in all required information</p>
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <div class="upload-picture">
+                            <label for="word">Upload Image:</label>
+                            <div class="choose-file-box">
+                                <input type="file" class="form-input" name="word" id="word" placeholder="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="word">FirstName</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter FirstName" required>
+                            </div>
+                            <div class="">
+                                <label for="word">MiddleName</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter MiddleName">
+                            </div>
+                            <div class="">
+                                <label for="word">LastName</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter LastName" required>
+                            </div>
+                            <div class="">
+                                <label for="word">Email</label>
+                                <input type="email" class="form-input" name="word" id="word" placeholder="Enter Email Address" required>
+                            </div>
+                            <div class="">
+                                <label for="word">Date Of Birth</label>
+                                <input type="date" class="form-input" name="word" id="word" placeholder="">
+                            </div>
+                            <div class="">
+                                <div class="input-checkbox">
+                                    <label for="word">Male</label>
+                                    <input type="radio" class="form-input-checkbox" name="gender" id="word" placeholder="">
+                                    <label for="word">Female</label>
+                                    <input type="radio" class="form-input-checkbox" name="gender" id="word" placeholder="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="word">Phone Number</label>
+                                <input type="number" class="form-input" name="phone-number" id="word" placeholder="Enter Phone Number">
+                            </div>
+                            <div class="">
+                                <label for="word">Address</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter Your Address">
+                            </div>
+                            <div class="">
+                                <label for="word">State of origin</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter Your State of Origin">
+                            </div>
+                            <div class="">
+                                <label for="word">Local Government</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter Your LGA">
+                            </div>
+                            <div class="">
+                                <label for="word">Next of kin</label>
+                                <input type="text" class="form-input" name="word" id="word" placeholder="Enter Next-Of-Kin">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="academic-section">
+                        <div class="academic-info">
+                            <h2>Academic Related Information</h2>
+                        </div>
+                        <div class="">
+                            <label for="word">Jamb Score</label>
+                            <input type="number" class="form-input" name="score" id="word" placeholder="Enter Jamb Score">
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" class="btn"><a href="{{ url_for('score') }}">Submit</a></button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+    
